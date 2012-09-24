@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12B19" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="biI-FR-cdl">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="oLE-y7-Hfa">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D0T-AM-r4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="j3q-IP-fLD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lc7-k8-7qO">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tpM-Ze-n1q">
+                                <rect key="frame" x="340" y="483" width="89" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Let's Go!">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tJm-Bg-cKa" kind="push" id="uz6-JJ-B4Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wfx-R6-8IE"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-794" y="-453"/>
+        </scene>
+        <!--Parent View Controller-->
+        <scene sceneID="Yu2-OR-Fud">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oGI-KC-Bbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="tJm-Bg-cKa" customClass="ARParentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jEO-en-RK8">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oOF-hj-Ze0"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="218" y="-453"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F0e-RH-6Xd">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gFV-Mf-D3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="biI-FR-cdl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="obR-2E-zYA">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="j3q-IP-fLD" kind="relationship" relationship="rootViewController" id="dJD-VC-NmD"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-1768" y="-453"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="ARParentViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ARParentViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
